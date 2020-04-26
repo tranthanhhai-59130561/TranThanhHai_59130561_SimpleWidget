@@ -38,6 +38,7 @@
         android:text="Giới tính:" />
 
     <RadioGroup
+        android:id="@+id/rdgGioiTinh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -56,4 +57,45 @@
             android:text="Nữ"
             />
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sở thích của bạn:"/>
+
+    <RadioGroup
+        android:id="@+id/rdgSoThich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/cbPhim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xem phim"
+            />
+        <CheckBox
+            android:id="@+id/cbNhac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nghe nhạc"/>
+        <CheckBox
+            android:id="@+id/cbCafe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đi cafe với bạn bè"/>
+        <CheckBox
+            android:id="@+id/cbHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ở nhà một mình"/>
+        <CheckBox
+            android:id="@+id/cbNauAn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vào bếp nấu ăn"/>
+    </RadioGroup>
+
+
 </LinearLayout>
