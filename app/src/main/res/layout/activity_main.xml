@@ -106,11 +106,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sở thích khác:"/>
+
     <EditText
         android:id="@+id/edtKhac"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nhập sở thích khác"/>
+        android:hint="Nhập sở thích khác"
+        android:inputType="text"/>
 
     <Button
         android:id="@+id/btnXacNhan"
