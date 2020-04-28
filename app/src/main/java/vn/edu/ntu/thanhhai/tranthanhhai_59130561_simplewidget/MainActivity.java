@@ -55,14 +55,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void hienThi()
     {
-        String ten, ngaySinh, soThichKhac,inTT;
+        String ten, ngaySinh, soThichKhac,inThongTin;
         String soThich = "Sở thích: ";
         String gioiTinh = "Giới tính: ";
 
         ten = edtTen.getText().toString();
         ngaySinh = edtNgaySinh.getText().toString();
         soThichKhac = edtKhac.getText().toString();
-        
+
         switch (rdgGioiTinh.getCheckedRadioButtonId())
         {
             case R.id.rbNam:
@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         if (cbNauAn.isChecked())
             soThich = soThich + " Vào bếp nấu ăn; ";
 
-
+        inThongTin = ten +"\nNgày sinh: "+ngaySinh +"\n"+"\n Giới tính"+gioiTinh+"Sở thích: "+soThich+soThichKhac;
+        Toast.makeText(getApplicationContext(), inThongTin, Toast.LENGTH_SHORT).show();
     }
 }
