@@ -55,9 +55,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void hienThi()
     {
-        String ten, ngaySinh, inTT;
+        String ten, ngaySinh, soThichKhac,inTT;
         String soThich = "Sở thích: ";
         String gioiTinh = "Giới tính: ";
+
+        ten = edtTen.getText().toString();
+        ngaySinh = edtNgaySinh.getText().toString();
+        soThichKhac = edtKhac.getText().toString();
+        
         switch (rdgGioiTinh.getCheckedRadioButtonId())
         {
             case R.id.rbNam:
@@ -67,6 +72,18 @@ public class MainActivity extends AppCompatActivity {
                 gioiTinh = gioiTinh + " Nữ";
                 break;
         }
+
+        if (cbPhim.isChecked())
+            soThich = soThich + "Xem phim; ";
+        if (cbNhac.isChecked())
+            soThich = soThich + " Nghe nhạc; ";
+        if (cbCafe.isChecked())
+            soThich = soThich + " Đi cafe với bạn bè; ";
+        if (cbHome.isChecked())
+            soThich = soThich + " Ở nhà một mình; ";
+        if (cbNauAn.isChecked())
+            soThich = soThich + " Vào bếp nấu ăn; ";
+
 
     }
 }
