@@ -5,20 +5,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Switch;
-import android.widget.TextView;
+//import android.widget.TextView;
 import android.widget.Toast;
 
 import java.lang.invoke.MethodHandles;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView txtHT;
     EditText edtTen, edtNgaySinh, edtKhac;
     RadioGroup rdgSoThich, rdgGioiTinh;
     Button btnXacNhan;
+    CheckBox cbPhim, cbNhac, cbCafe ,cbHome, cbNauAn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
         rdgGioiTinh = findViewById(R.id.rdgGioiTinh);
         rdgSoThich = findViewById(R.id.rdgSoThich);
         edtKhac = findViewById(R.id.edtKhac);
+        cbPhim = findViewById(R.id.cbPhim);
+        cbNhac = findViewById(R.id.cbNhac);
+        cbCafe = findViewById(R.id.cbCafe);
+        cbHome = findViewById(R.id.cbHome);
+        cbNauAn = findViewById(R.id.cbNauAn);
     }
 
     private void addEvents()
