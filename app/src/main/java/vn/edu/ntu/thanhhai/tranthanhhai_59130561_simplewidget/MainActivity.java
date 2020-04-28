@@ -55,12 +55,17 @@ public class MainActivity extends AppCompatActivity {
 
     private void hienThi()
     {
+        String ten, ngaySinh, inTT;
+        String soThich = "Sở thích: ";
+        String gioiTinh = "Giới tính: ";
         switch (rdgGioiTinh.getCheckedRadioButtonId())
         {
             case R.id.rbNam:
-                Toast.makeText(getApplicationContext(),"Nam",Toast.LENGTH_SHORT).show();
+                gioiTinh = gioiTinh + " Nam";
+                break;
             case R.id.rbNu:
-                Toast.makeText(getApplicationContext(),"Nu",Toast.LENGTH_SHORT).show();
+                gioiTinh = gioiTinh + " Nữ";
+                break;
         }
 
     }
